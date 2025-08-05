@@ -25,7 +25,7 @@ git clone https://github.com/ashubambal/ollama-gpt.git
 cd ollama-gpt
 ```
 
-### 2️⃣ Configure Environment Variables
+### 2️⃣ Configure Environment Variables (Optional)
 Edit docker-compose.yml and set your own WEBUI_SECRET_KEY:
 ```bash
 WEBUI_SECRET_KEY=enter-your-secret-key
@@ -67,55 +67,12 @@ ollama run llama3.2:1b-instruct-q4_0
 - Login using WEBUI_SECRET_KEY
 - Select your model and start chatting 🎉
 
-### ⚙️ Docker Compose Configuration
-```bash
-services:
-  ollama:
-    image: ollama/ollama
-    container_name: ollama
-    restart: unless-stopped
-    ports:
-      - "11434:11434"
-    volumes:
-      - ollama_data:/root/.ollama
-    environment:
-      - OLLAMA_LLM_MAX_MEMORY=6000MB
-      - OLLAMA_NUM_THREADS=6
-      - OLLAMA_MAX_LOADED_MODELS=1
-      - OLLAMA_KEEP_ALIVE=5m
-      - OLLAMA_NUM_PARALLEL=1
-    deploy:
-      resources:
-        limits:
-          cpus: '6.0'
-        reservations:
-          cpus: '2.0'
-
-  open-webui:
-    image: ghcr.io/open-webui/open-webui:main
-    container_name: open-webui
-    restart: unless-stopped
-    ports:
-      - "8080:8080"
-    volumes:
-      - open_webui_data:/app/backend/data
-    environment:
-      - OLLAMA_BASE_URL=http://ollama:11434
-      - WEBUI_SECRET_KEY=enter-key-here
-    depends_on:
-      - ollama
-
-volumes:
-  ollama_data:
-  open_webui_data:
-```
-
 ### 📚 Model Resources
 - Ollama Model Library
 - Recommended code-focused models:
-1.codellama
-2.qwen2.5-coder
-3.phi3.5
+    - codellama
+    - qwen2.5-coder
+    - phi3.5
 
 ### 🎥 Output you can see in below video
 Link it in README:
@@ -138,8 +95,3 @@ If you want, I can now **add screenshots of the Open WebUI UI** directly into th
 Do you want me to add those screenshots in this file?
 
 ```
-###This Changes From Ashutosh Ardak
-
-### This changes from Kalyani
-
-Changes from kalyanimude
