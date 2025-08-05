@@ -74,10 +74,11 @@ ollama run llama3.2:1b-instruct-q4_0
     - qwen2.5-coder
     - phi3.5
 
-### 🎥 Output you can see in below video
-Link it in README:
-[▶ Watch Demo](assets/demo.gif)
+### 🎥 Output Demo
 
+<p align="center">
+  <img src="assets/demo.gif" alt="Demo" width="700">
+</p>
 
 ### 🛠 Stopping the Services
 ```bash
