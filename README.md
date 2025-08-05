@@ -130,9 +130,7 @@ docker compose down
 ### 📄 License
 MIT — Free to use and modify.
 ```bash
-
----
-
+ 
 This is **one continuous README** — no separated instructions, everything from install to demo is inside.  
 
 If you want, I can now **add screenshots of the Open WebUI UI** directly into this same README so that new users see exactly what they’ll get before running it.  
