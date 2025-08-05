@@ -76,7 +76,7 @@ ollama run llama3.2:1b-instruct-q4_0
 
 ### 🎥 Output you can see in below video
 Link it in README:
-<video src="assets/demo.mp4" controls width="700"></video>
+<video src="assets/demo.mp4" controls width="1000"></video>
 
 
 ### 🛠 Stopping the Services
