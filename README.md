@@ -42,30 +42,30 @@ docker ps
 ```
 Expected:
 
-- **ollama — AI model server
-- **open-webui — Web interface
+- ollama — AI model server
+- open-webui — Web interface
 
 
 ### 5️⃣ Install a Model in Ollama
-- **Enter the Ollama container:
+- Enter the Ollama container:
 ```bash
 docker exec -it ollama bash
 ```
 
-- **Pull a model (example: llama3.2:1b-instruct-q4_0):
+- Pull a model (example: llama3.2:1b-instruct-q4_0):
 ```bash
 ollama pull llama3.2:1b-instruct-q4_0
 ```
 
-- **Test in CLI:
+- Test in CLI:
 ```bash
 ollama run llama3.2:1b-instruct-q4_0
 ```
 
 ### 6️⃣ Access via Web Interface
-- **Open browser → http://localhost:8080
-- **Login using WEBUI_SECRET_KEY
-- **Select your model and start chatting 🎉
+- Open browser → http://localhost:8080
+- Login using WEBUI_SECRET_KEY
+- Select your model and start chatting 🎉
 
 ### ⚙️ Docker Compose Configuration
 ```bash
@@ -111,11 +111,11 @@ volumes:
 ```
 
 ### 📚 Model Resources
-- ** Ollama Model Library
-- ** Recommended code-focused models:
-codellama
-qwen2.5-coder
-phi3.5
+- Ollama Model Library
+- Recommended code-focused models:
+1.codellama
+2.qwen2.5-coder
+3.phi3.5
 
 ### 🎥 Output you can see in below video
 Link it in README:
