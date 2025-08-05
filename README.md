@@ -21,6 +21,12 @@ Run your own **ChatGPT-like interface** entirely offline using:
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/ollama-gpt.git
+git clone https://github.com/ashubambal/ollama-gpt.git
 cd ollama-gpt
+
+### 2️⃣ Configure Environment Variables
+Edit docker-compose.yml and set your own WEBUI_SECRET_KEY:
+```bash
+WEBUI_SECRET_KEY=enter-your-secret-key
+
 
